@@ -13,7 +13,7 @@ def collect_st_andrews():
     standrews_description = []
     with sync_playwright() as p:
         # Launch the browser
-        browser = p.chromium.launch(headless=True) # Opens chromium. headless=True opens in the background, False makes it visible.
+        browser = p.chromium.launch(headless=True)
         # Open a new page
         page = browser.new_page()
         # Go to the target URL
